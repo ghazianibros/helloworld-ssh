@@ -4,7 +4,7 @@ remote.host = "centos"
 remote.allowAnyHosts = true
 
 node {
-		stage("SSH Connection!") {
+		stage("SSH Connection!!") {
 			  withCredentials([sshUserPrivateKey(credentialsId: 'centosSSH', keyFileVariable: 'identity', passphraseVariable: '', usernameVariable: 'remote_user')]) {
 				  remote.user = remote_user
 				  remote.identityFile = identity
